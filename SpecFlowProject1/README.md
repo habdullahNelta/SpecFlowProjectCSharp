@@ -60,6 +60,18 @@ Ausführen des Tests wie folgt:
 ![SpecFlow](Readme/runnormal.png)
 
 ### **run in CMD**
-der test kann mit dem Befehl `dotnet test --filter Category=tag` ausgeführt werden.
+der test kann mit dem Befehl `dotnet test --filter Category=tag` ausgeführt werden, wobei `tag` kann je nach scenario angepasst werden.
 
 ![SpecFlow](Readme/run.png)
+
+## **Report Grenieren**
+- Am anfang muss in CMD der Befehl `dotnet tool install --global SpecFlow.Plus.LivingDoc.CLI` ausgeführt werden.
+
+- in Projekt Ordner soll der bin ordner dann Debug dann net6.0 geöffnet werden.
+dann CMD öffnen und Eingeben den Befehl `livingdoc test-assembly SpecFlowProject1.dll -t TestExecution.json`, wobei `SpecFlowProject1.dll` soll je nach Projektsname geändert werden.
+ in folgenden Bild ist die in CMD erwartete Antwort.
+
+![SpecFlow](Readme/report.png)
+
+danach wird ein HTML-Report mit dem Name `LivingDoc.html` im net6.0 Ordner Grenieriert werden.
+![SpecFlow](Readme/endReport.png)
