@@ -17,12 +17,10 @@ namespace SpecFlowProject1.StepDefinitions
             this.driver = driver;
         }
 
-        private readonly string WebURL = "https://demowebshop.tricentis.com";
         LoginPage loginPage ;
         [Given(@"user navigates to demo shop site")]
         public void GivenUserNavigatesToDemoShopSite()
         {
-            driver.Url = WebURL;
             loginPage = new LoginPage(driver);
         }
 

@@ -7,20 +7,28 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="ExtentReports" Version="4.1.0" />
-    <PackageReference Include="ExtentReports.Core" Version="1.0.3" />
-    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
-    <PackageReference Include="Selenium.WebDriver" Version="4.8.2" />
-    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
-    <PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
-    <PackageReference Include="nunit" Version="3.13.2" />
-    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
-    <PackageReference Include="FluentAssertions" Version="6.2.0" />
+    <Compile Remove="Report\**" />
+    <Compile Remove="Support\**" />
+    <EmbeddedResource Remove="Report\**" />
+    <EmbeddedResource Remove="Support\**" />
+    <None Remove="Report\**" />
+    <None Remove="Support\**" />
+    <SpecFlowFeatureFiles Remove="Report\**" />
+    <SpecFlowFeatureFiles Remove="Support\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Report\**" />
+    <SpecFlowObsoleteCodeBehindFiles Remove="Support\**" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Report\" />
-    <Folder Include="Support\" />
+    <PackageReference Include="ExtentReports" Version="4.1.0" />
+    <PackageReference Include="ExtentReports.Core" Version="1.0.3" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.0.0" />
+    <PackageReference Include="NUnit" Version="3.13.3" />
+    <PackageReference Include="Selenium.WebDriver" Version="4.8.2" />
+    <PackageReference Include="SpecFlow.Plus.LivingDocPlugin" Version="3.9.57" />
+    <PackageReference Include="SpecFlow.NUnit" Version="3.9.40" />
+    <PackageReference Include="NUnit3TestAdapter" Version="4.1.0" />
+    <PackageReference Include="FluentAssertions" Version="6.2.0" />
   </ItemGroup>
 
 </Project>
