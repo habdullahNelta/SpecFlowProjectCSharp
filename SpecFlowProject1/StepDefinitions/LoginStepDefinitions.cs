@@ -22,6 +22,7 @@ namespace SpecFlowProject1.StepDefinitions
         public void GivenUserNavigatesToDemoShopSite()
         {
             loginPage = new LoginPage(driver);
+           // loginPage.test1();
         }
 
         [Given(@"user hits Log in link")]
